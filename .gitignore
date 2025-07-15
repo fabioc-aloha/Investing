@@ -185,6 +185,20 @@ site/
 *.tmp
 *~
 
+# VS Code auto-generated backup files that may reappear
+.vscode/settings.json.backup
+.vscode/launch.json.backup
+.vscode/tasks.json.backup
+
+# Temporary files that may be recreated
+**/*.temp
+**/.#*
+**/~*
+
+# Git auto-generated files that may cause issues
+**/.git/index.lock
+**/.git/refs/remotes/*/HEAD
+
 ## Keep Important Files (Override ignore patterns)
 # Always include instruction files and prompts
 !.github/instructions/*.md
@@ -205,3 +219,20 @@ site/
 ## Comment: This .gitignore is configured for investment management workflows
 ## It protects sensitive financial data while preserving analytical frameworks,
 ## instruction files, and non-sensitive research content for version control.
+# VS Code auto-generated files
+.vscode/settings.json.backup
+.vscode/launch.json.backup
+.vscode/tasks.json.backup
+**/*.tmp
+**/*.temp
+**/~*
+**/.#*
+
+# OS auto-generated files that may reappear
+**/.DS_Store
+**/Thumbs.db
+**/desktop.ini
+
+# Git auto-generated files
+**/.git/index.lock
+**/.git/refs/remotes/*/HEAD
