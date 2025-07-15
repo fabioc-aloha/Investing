@@ -5,6 +5,21 @@ description: "Security analysis methodology and valuation standards"
 
 # Security Analysis Procedural Memory
 
+## Document Presentation Standards
+
+### Company Logo Integration (Required for All Equity Analysis)
+- **Logo Placement**: Include company logo prominently at the top of analysis document, below the title
+- **Image Requirements**: High-resolution logo (minimum 200px width), preferably PNG or SVG format
+- **Source Standards**: Use official company logo from:
+  - Company's official website investor relations page
+  - SEC filings (10-K, 10-Q) with embedded logos
+  - Company's official press kit or media resources
+  - Professional financial databases (Bloomberg, FactSet, Reuters)
+- **Fallback Options**: If official logo unavailable, use company name in professional typography
+- **Consistency**: Maintain logo aspect ratio and brand colors as specified by company
+- **Legal Compliance**: Ensure logo usage complies with fair use for financial analysis purposes
+- **Professional Presentation**: Logo should enhance document credibility and visual appeal
+
 ## Research Structure and Methodology
 
 ### Phase 1: Company Background and Context (25% of analysis time)
@@ -308,12 +323,13 @@ Create a comprehensive table consolidating all risk assessment criteria with cle
 - Recommended portfolio allocation
 
 ### Company Background Section (25% of report)
-1. **Business Overview** (5-7 paragraphs)
-2. **Products and Services** (detailed breakdown)
-3. **Industry and Market Analysis** (3-5 paragraphs)
-4. **Competitive Landscape** (competitor analysis table + narrative)
-5. **Corporate Strategy and Management** (2-3 paragraphs)
-6. **Geographic and Segment Breakdown** (charts + analysis)
+1. **Company Logo** (prominently displayed at document header)
+2. **Business Overview** (5-7 paragraphs)
+3. **Products and Services** (detailed breakdown)
+4. **Industry and Market Analysis** (3-5 paragraphs)
+5. **Competitive Landscape** (competitor analysis table + narrative)
+6. **Corporate Strategy and Management** (2-3 paragraphs)
+7. **Geographic and Segment Breakdown** (charts + analysis)
 
 ### Recent Developments Section (15% of report)
 1. **Latest Quarterly Results** (detailed earnings analysis)
