@@ -12,6 +12,16 @@ description: "General investment management standards and fiduciary responsibili
 - Implement robust compliance procedures and maintain detailed audit trails
 - Uphold the highest standards of professional conduct and integrity
 
+## File Extension and Documentation Standards
+- Always create portfolio files with `.md` extension for Markdown preview capabilities
+- Use `.json` extension for structured data files requiring JSON validation
+- Risk assessment files must use `.md` extension for comprehensive documentation
+- Performance analysis files must use `.md` extension for detailed reporting
+- Strategy documents must use `.md` extension for proper formatting and readability
+- Avoid custom extensions like `.portfolio`, `.risk`, `.performance` - use standard `.md` instead
+- Include proper frontmatter metadata in Markdown files for categorization
+- Use consistent naming conventions: `asset-class-strategy-type.md` format
+
 ## Investment Philosophy and Process
 - Develop and maintain a clearly articulated investment philosophy
 - Implement systematic and repeatable investment processes

@@ -20,14 +20,14 @@ IMPORTANT: This file serves as Global Investment Management Declarative Memory. 
 ## 🎯 Investment Management Cognitive Architecture Coordination
 
 ### Investment Management Procedural Memory Activation (Context-Dependent):
-- `investment-management.instructions.md` → General investment for .portfolio, .analysis, .strategy files
-- `portfolio-analysis.instructions.md` → Portfolio analysis for .portfolio, .allocation, .performance files
-- `risk-assessment.instructions.md` → Risk assessment for .risk, .var, .stress files
-- `financial-modeling.instructions.md` → Financial modeling for .model, .valuation, .backtest files
-- `market-research.instructions.md` → Market research for .research, *market*, *sector* files
-- `security-analysis.instructions.md` → Security analysis for *equity*, *bond*, *security* files
-- `asset-allocation.instructions.md` → Asset allocation for .allocation, *strategic*, *tactical* files
-- `performance-measurement.instructions.md` → Performance for .performance, *attribution*, *benchmark* files
+- `investment-management.instructions.md` → General investment for .md portfolio, .analysis, .strategy files
+- `portfolio-analysis.instructions.md` → Portfolio analysis for .md portfolio, .allocation, .performance files
+- `risk-assessment.instructions.md` → Risk assessment for .md risk files and risk directories
+- `financial-modeling.instructions.md` → Financial modeling for .md model, .valuation, .backtest files
+- `market-research.instructions.md` → Market research for .md research files and market analysis
+- `security-analysis.instructions.md` → Security analysis for .md equity, bond, security files
+- `asset-allocation.instructions.md` → Asset allocation for .md allocation files and strategic documents
+- `performance-measurement.instructions.md` → Performance for .md performance files and attribution analysis
 - `quantitative-analysis.instructions.md` → Quantitative for *quant*, *factor*, *algorithm* files
 - `alternative-investments.instructions.md` → Alternatives for *alternative*, *private*, *hedge* files
 - `derivatives-trading.instructions.md` → Derivatives for *option*, *future*, *swap* files

@@ -5,6 +5,16 @@ description: "Risk assessment methodology and risk management best practices"
 
 # Risk Assessment Procedural Memory
 
+## File Format and Documentation Requirements
+- Always create risk assessment files with `.md` extension for comprehensive documentation
+- Use `.json` extension only for structured risk data requiring validation and computation
+- Risk reports must use `.md` extension for detailed analysis and visual presentation
+- Stress test files must use `.md` extension for scenario documentation and results
+- Include YAML frontmatter with risk metadata (risk level, assessment date, reviewer)
+- Follow naming convention: `asset-strategy-risk-assessment.md`
+- Ensure all risk documentation supports markdown tables, charts, and formatting
+- Use emoji indicators (🔴🟡🟢) for visual risk level communication
+
 ## Risk Identification and Classification
 - Identify all sources of investment risk including market, credit, liquidity, and operational risks
 - Classify risks by type, magnitude, and probability of occurrence

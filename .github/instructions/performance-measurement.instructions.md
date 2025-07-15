@@ -5,6 +5,16 @@ description: "Performance measurement and attribution analysis best practices"
 
 # Performance Measurement Procedural Memory
 
+## File Format and Reporting Standards
+- Create all performance files with `.md` extension for comprehensive analysis and visualization
+- Use `.json` extension only for structured performance data requiring calculation validation
+- Performance reports must use `.md` extension for detailed commentary and chart integration
+- Attribution analysis files must use `.md` extension for methodology explanation and results
+- Include YAML frontmatter with performance metadata (period, benchmark, manager)
+- Follow naming convention: `strategy-performance-period.md`
+- Ensure all performance documentation supports markdown tables and charts
+- Use visual formatting (tables, charts, highlights) for clear performance communication
+
 ## Performance Calculation Standards
 - Use time-weighted returns for investment manager evaluation
 - Calculate money-weighted returns for client reporting when appropriate

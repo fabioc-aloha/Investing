@@ -5,6 +5,16 @@ description: "Portfolio analysis methodology and construction best practices"
 
 # Portfolio Analysis Procedural Memory
 
+## File Format and Documentation Standards
+- Create all portfolio files with `.md` extension for enhanced readability and preview
+- Use `.json` extension only for structured portfolio data requiring validation
+- Performance files must use `.md` extension for comprehensive analysis documentation
+- Allocation files must use `.md` extension for detailed strategy explanations
+- Include YAML frontmatter in Markdown files with portfolio metadata
+- Follow naming convention: `strategy-type-name.md` (e.g., `ai-first-technology.md`)
+- Ensure all portfolio documentation supports VS Code Markdown preview
+- Use tables, charts, and formatted text for professional presentation
+
 ## Portfolio Construction Principles
 - Begin with clear investment objectives and constraints
 - Use strategic asset allocation as the foundation for portfolio construction
