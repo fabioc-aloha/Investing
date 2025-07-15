@@ -1,0 +1,207 @@
+# Investment Management Repository - Git Ignore Configuration
+
+## Sensitive Data Protection
+# Never commit actual financial data, personal information, or proprietary trading strategies
+*.portfolio-data
+*.positions
+*.trades
+*.accounts
+*.sensitive
+**/personal/**
+**/confidential/**
+**/proprietary/**
+
+## API Keys and Credentials
+.env
+.env.local
+.env.*.local
+config/credentials.*
+**/api-keys/**
+**/tokens/**
+*.key
+*.pem
+*.p12
+*.pfx
+
+## Financial Data Files
+# Market data that should be refreshed from sources
+**/market-data/live/**
+**/prices/current/**
+**/quotes/**
+*.csv.data
+*.xlsx.data
+*.json.data
+
+## Temporary and Cache Files
+# VS Code
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# R
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# MATLAB
+*.asv
+*.mex*
+
+## Operating System Files
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Linux
+*~
+.directory
+
+## IDE and Editor Files
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.sdf
+*.opensdf
+
+# JetBrains
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+## Build and Distribution
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python builds
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+
+## Logs and Monitoring
+# Application logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime logs
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+## Database Files
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# Other databases
+*.mdb
+*.accdb
+
+## Large Files and Archives
+# Compressed files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Large datasets (use Git LFS if needed)
+*.csv.large
+*.xlsx.large
+*.parquet
+*.h5
+*.hdf5
+
+## Documentation Build Files
+# Sphinx
+docs/_build/
+docs/build/
+
+# MkDocs
+site/
+
+## Performance and Profiling
+# Python profiling
+*.prof
+*.pstats
+
+# Memory dumps
+*.dmp
+*.mdmp
+
+## Backup Files
+*.bak
+*.backup
+*.old
+*.orig
+*.tmp
+*~
+
+## Keep Important Files (Override ignore patterns)
+# Always include instruction files and prompts
+!.github/instructions/*.md
+!.github/prompts/*.md
+!.github/copilot-instructions.md
+
+# Always include analysis templates and examples
+!**/templates/**
+!**/examples/**
+!**/*.template.*
+!**/*.example.*
+
+# Always include documentation
+!README*.md
+!SETUP*.md
+!docs/**/*.md
+
+## Comment: This .gitignore is configured for investment management workflows
+## It protects sensitive financial data while preserving analytical frameworks,
+## instruction files, and non-sensitive research content for version control.
