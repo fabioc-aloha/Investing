@@ -10,7 +10,8 @@ function Test-GitRepository {
     try {
         git rev-parse --git-dir *> $null
         return $true
-    } catch {
+    }
+    catch {
         return $false
     }
 }
@@ -29,10 +30,12 @@ function Remove-UntrackedFiles {
         if ($confirm -eq 'y' -or $confirm -eq 'Y') {
             git clean -df
             Write-Host "✅ Untracked files removed" -ForegroundColor Green
-        } else {
+        }
+        else {
             Write-Host "⏭️  Skipped file removal" -ForegroundColor Yellow
         }
-    } else {
+    }
+    else {
         Write-Host "✅ No untracked files found" -ForegroundColor Green
     }
 }
@@ -53,10 +56,12 @@ function Remove-EmptyDirectories {
         if ($confirm -eq 'y' -or $confirm -eq 'Y') {
             $emptyDirs | Remove-Item -Force
             Write-Host "✅ Empty directories removed" -ForegroundColor Green
-        } else {
+        }
+        else {
             Write-Host "⏭️  Skipped directory removal" -ForegroundColor Yellow
         }
-    } else {
+    }
+    else {
         Write-Host "✅ No empty directories found" -ForegroundColor Green
     }
 }
@@ -102,7 +107,8 @@ function Update-GitIgnore {
             Write-Host "Adding additional ignore patterns to prevent file reappearance..." -ForegroundColor Yellow
             $problematicPatterns | Add-Content $gitignorePath
             Write-Host "✅ .gitignore updated with protective patterns" -ForegroundColor Green
-        } else {
+        }
+        else {
             Write-Host "✅ .gitignore already has protective patterns" -ForegroundColor Green
         }
     }
@@ -132,13 +138,16 @@ function Test-VSCodeWorkspace {
                 Write-Host "VS Code settings issues found:" -ForegroundColor Red
                 $issues | ForEach-Object { Write-Host "  $_" -ForegroundColor Red }
                 Write-Host "Consider updating .vscode/settings.json to prevent auto-operations" -ForegroundColor Yellow
-            } else {
+            }
+            else {
                 Write-Host "✅ VS Code settings look good" -ForegroundColor Green
             }
-        } catch {
+        }
+        catch {
             Write-Host "⚠️  Could not parse VS Code settings.json" -ForegroundColor Yellow
         }
-    } else {
+    }
+    else {
         Write-Host "ℹ️  No VS Code settings found" -ForegroundColor Blue
     }
 }

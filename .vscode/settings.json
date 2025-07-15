@@ -1,0 +1,74 @@
+{
+    "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+    "chat.promptFiles": true,
+    "files.associations": {
+        "*.portfolio": "json",
+        "*.analysis": "markdown",
+        "*.model": "json",
+        "*.strategy": "markdown",
+        "*.research": "markdown",
+        "*.valuation": "json",
+        "*.risk": "json",
+        "*.performance": "json",
+        "*.allocation": "json",
+        "*.screening": "json",
+        "*.backtest": "json"
+    },
+    "search.exclude": {
+        "**/confidential-research/**": true,
+        "**/proprietary-models/**": true,
+        "**/insider-info/**": true,
+        "**/node_modules/**": true,
+        "**/tmp/**": true,
+        "**/temp/**": true,
+        "**/build/**": true,
+        "**/dist/**": true,
+        "**/.git/**": true
+    },
+    "files.watcherExclude": {
+        "**/confidential-research/**": true,
+        "**/proprietary-models/**": true,
+        "**/insider-info/**": true,
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/tmp/**": true,
+        "**/temp/**": true,
+        "**/build/**": true,
+        "**/dist/**": true
+    },
+    "git.autofetch": false,
+    "git.autoStash": false,
+    "git.confirmSync": true,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80,
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "*.portfolio",
+                "*.model",
+                "*.valuation"
+            ],
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "timestamp": {
+                        "type": "string"
+                    },
+                    "version": {
+                        "type": "string"
+                    },
+                    "data": {
+                        "type": "object"
+                    }
+                }
+            }
+        }
+    ],
+    "markdown.extension.toc.levels": "2..6",
+    "markdown.extension.completion.enabled": true
+}
