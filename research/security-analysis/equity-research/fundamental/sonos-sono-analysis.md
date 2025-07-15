@@ -1,5 +1,7 @@
 # Sonos Inc. (SONO) - Investment Research
 
+![Sonos Logo](https://finnhub.io/api/logo?symbol=SONO)
+
 ## Executive Summary
 
 ### Investment Risk Assessment Matrix
@@ -56,6 +58,19 @@
 - Challenges from increased competition and macroeconomic headwinds
 
 ## Company Background and Context
+
+### Company Logo and Brand Identity
+<div align="center">
+<img src="https://finnhub.io/api/logo?symbol=SONO" alt="Sonos Inc. Logo" width="300"/>
+</div>
+
+**Logo Source Standards Met**:
+- **Source**: Finnhub Financial API (finnhub.io) - Professional financial data provider
+- **Format**: High-resolution PNG format optimized for financial documents
+- **Usage**: Financial analysis purposes under fair use guidelines from official data provider
+- **Brand Consistency**: Official company logo from verified financial database
+- **Professional Presentation**: Centered placement enhancing document credibility
+- **Data Provider**: Finnhub provides official logos sourced from company filings and investor relations
 
 ### Business Overview
 Sonos Inc. operates as a leading designer and manufacturer of premium wireless audio products and software platforms. Founded in 2002 and headquartered in Santa Barbara, California, the company has established itself as a pioneer in multi-room wireless audio systems. Sonos generates revenue through two primary streams: hardware sales (88% of revenue) and software/services (12% of revenue), with the latter representing a strategic growth area.

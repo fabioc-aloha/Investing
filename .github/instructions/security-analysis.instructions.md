@@ -14,7 +14,8 @@ description: "Security analysis methodology and valuation standards"
   - Company's official website investor relations page
   - SEC filings (10-K, 10-Q) with embedded logos
   - Company's official press kit or media resources
-  - Professional financial databases (Bloomberg, FactSet, Reuters)
+  - Professional financial databases (Bloomberg, FactSet, Reuters, Finnhub)
+  - Finnhub API: `https://finnhub.io/api/logo?symbol=TICKER` for reliable logo access
 - **Fallback Options**: If official logo unavailable, use company name in professional typography
 - **Consistency**: Maintain logo aspect ratio and brand colors as specified by company
 - **Legal Compliance**: Ensure logo usage complies with fair use for financial analysis purposes
