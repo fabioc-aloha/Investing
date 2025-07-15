@@ -1,3 +1,5 @@
+![Investment Management Banner](./banner.png)
+
 # Investment Management Cognitive Architecture
 
 Welcome to your comprehensive investment management environment powered by Project Catalyst cognitive architecture. This setup provides a sophisticated framework for portfolio analysis, risk assessment, financial modeling, market research, and investment strategy development.
