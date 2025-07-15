@@ -1,0 +1,157 @@
+{
+    "name": "investment-management-framework",
+    "version": "0.2.0",
+    "codename": "Calcium",
+    "license": "All Rights Reserved",
+    "private": true,
+    "author": "fabioc-aloha",
+    "copyright": "© 2025 fabioc-aloha. All Rights Reserved.",
+    "element": {
+        "name": "Calcium",
+        "symbol": "Ca",
+        "atomicNumber": 20,
+        "symbolism": "Essential building block for strong structures - representing the foundational framework for AI-focused investment analysis"
+    },
+    "releaseDate": "2025-07-15",
+    "description": "Institutional-grade investment management framework with enhanced security analysis methodology and AI-First portfolio research capabilities",
+    "repository": {
+        "name": "Investing",
+        "owner": "fabioc-aloha",
+        "branch": "main"
+    },
+    "features": {
+        "securityAnalysis": {
+            "riskAssessmentMatrix": "15+ weighted criteria framework with BUY/HOLD/SELL aggregation",
+            "altmanZScore": "Industry-specific models (Original, Z', Z\", Emerging Markets)",
+            "piotroskiFScore": "9-criteria fundamental quality assessment",
+            "valuation": "Multi-approach DCF, relative multiples, sum-of-parts methodologies"
+        },
+        "portfolioFramework": {
+            "aiFirstCriteria": "5-criteria AI definition framework",
+            "allocation": "Core (60%), Growth (25%), Emerging (10%)",
+            "coverage": "6 core holdings analyzed with institutional-grade research"
+        },
+        "cognitiveArchitecture": {
+            "proceduralMemory": "Enhanced security analysis methodology",
+            "episodicMemory": "Complex equity analysis workflows",
+            "workingMemory": "4-rule optimization (@fiduciary-duty, @risk-first, @evidence-based, @meditation)"
+        }
+    },
+    "portfolio": {
+        "coreHoldings": {
+            "coverage": "60% (6 of 6 companies analyzed)",
+            "companies": {
+                "NVDA": {
+                    "zScore": 6.87,
+                    "fScore": "7/9",
+                    "targetPrice": 920,
+                    "upside": "12.2%"
+                },
+                "MSFT": {
+                    "zScore": 7.23,
+                    "fScore": "8/9",
+                    "targetPrice": 475,
+                    "upside": "8.0%"
+                },
+                "GOOGL": {
+                    "zScore": 5.92,
+                    "fScore": "7/9",
+                    "targetPrice": 175,
+                    "upside": "15.1%"
+                },
+                "META": {
+                    "zScore": 5.67,
+                    "fScore": "6/9",
+                    "targetPrice": 400,
+                    "upside": "23.1%"
+                },
+                "AMD": {
+                    "zScore": 4.98,
+                    "fScore": "7/9",
+                    "targetPrice": 175,
+                    "upside": "23.2%"
+                },
+                "CRM": {
+                    "zScore": 4.32,
+                    "fScore": "6/9",
+                    "targetPrice": 295,
+                    "upside": "20.4%"
+                }
+            }
+        },
+        "growthHoldings": {
+            "coverage": "0% (pending v0.3.0)",
+            "companies": [
+                "PLTR",
+                "AI",
+                "PATH",
+                "SNOW",
+                "CRWD",
+                "DDOG"
+            ]
+        },
+        "emergingHoldings": {
+            "coverage": "0% (pending future versions)",
+            "type": "Private/pre-IPO AI investments"
+        }
+    },
+    "metrics": {
+        "averageZScore": 5.83,
+        "averageFScore": "6.8/9",
+        "weightedAverageUpside": "17.3%",
+        "totalBuySignals": "71/102",
+        "riskRating": "Medium",
+        "portfolioHealth": "Strong financial stability with diversified AI exposure"
+    },
+    "technicalStats": {
+        "filesChanged": 10,
+        "insertions": 2830,
+        "deletions": 605,
+        "newAnalyses": 4,
+        "enhancedAnalyses": 3,
+        "documentationUpdates": 1
+    },
+    "qualityGates": {
+        "peerReview": true,
+        "crossSectorValidation": true,
+        "documentationComplete": true,
+        "cognitiveOptimization": true
+    },
+    "nextVersion": {
+        "version": "0.2.1",
+        "codename": "Neon",
+        "element": {
+            "name": "Neon",
+            "symbol": "Ne",
+            "atomicNumber": 10
+        },
+        "plannedFeatures": [
+            "Bug fixes and methodology refinements",
+            "Documentation updates and clarity improvements",
+            "Version schema corrections",
+            "Repository structure optimizations"
+        ],
+        "targetDate": "Q3 2025"
+    },
+    "versionHistory": [
+        {
+            "version": "0.1.0",
+            "codename": "Hydrogen",
+            "element": "H (Atomic #1)",
+            "description": "Initial investment framework and basic analysis capabilities"
+        },
+        {
+            "version": "0.2.0",
+            "codename": "Neon",
+            "element": "Ne (Atomic #10)",
+            "description": "Enhanced methodology and AI-First portfolio analysis"
+        }
+    ],
+    "roadmap": {
+        "0.2.1": "Bug Fixes & Documentation (Neon - Ne)",
+        "0.3.0": "Growth Holdings Analysis (Sodium - Na)",
+        "0.4.0": "Portfolio Optimization (Magnesium - Mg)",
+        "0.5.0": "Risk Management Framework (Aluminum - Al)",
+        "1.0.0": "Production Framework (Carbon - C)"
+    }
+}

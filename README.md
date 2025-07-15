@@ -1,10 +1,44 @@
+# Investment Management Framework v0.2.0 "Calcium"
+
+[![Version](https://img.shields.io/badge/version-0.2.0-blue.svg)](./VERSION.md) [![Element](https://img.shields.io/badge/element-Calcium%20(Ca%2020)-orange.svg)](./VERSION.md) [![Status](https://img.shields.io/badge/status-Production%20Ready-green.svg)](./VERSION.md) [![Analysis](https://img.shields.io/badge/core%20holdings-6%2F6%20complete-success.svg)](./VERSION.md) [![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red.svg)](./LICENSE)
+
 ![Investment Management Banner](./banner.png)
 
-# Investment Management Cognitive Architecture
+## 🧪 Current Release: v0.2.0 "Calcium" (Ca-20)
 
-Welcome to your comprehensive investment management environment powered by Project Catalyst cognitive architecture. This setup provides a sophisticated framework for portfolio analysis, risk assessment, financial modeling, market research, and investment strategy development.
+**Essential building block for strong structures** - representing the foundational framework for robust AI-focused investment analysis.
 
-## 🏗️ Architecture Overview
+Welcome to your comprehensive investment management framework powered by enhanced cognitive architecture and institutional-grade security analysis methodology. This environment provides sophisticated capabilities for AI-First portfolio analysis, risk assessment, financial modeling, and investment strategy development.
+
+## 🎯 Release Highlights v0.2.0 "Calcium"
+- **Enhanced Security Analysis Methodology** with Risk Assessment Matrix
+- **AI-First Technology Portfolio** framework and core holdings analysis  
+- **Institutional-Grade Research** with Z-Score/F-Score integration
+- **Cognitive Architecture Optimization** for investment decision-making
+
+## 📊 Portfolio Analysis Status
+
+### ✅ Core Holdings (60% Portfolio) - COMPLETE
+| Company | Z-Score | F-Score | Target | Upside | Status |
+|---------|---------|---------|--------|--------|--------|
+| **NVDA** | 6.87 | 7/9 | $920 | +12.2% | ✅ Complete |
+| **MSFT** | 7.23 | 8/9 | $475 | +8.0% | ✅ Complete |
+| **GOOGL** | 5.92 | 7/9 | $175 | +15.1% | ✅ Complete |
+| **META** | 5.67 | 6/9 | $400 | +23.1% | ✅ Complete |
+| **AMD** | 4.98 | 7/9 | $175 | +23.2% | ✅ Complete |
+| **CRM** | 4.32 | 6/9 | $295 | +20.4% | ✅ Complete |
+
+**Portfolio Metrics**: Avg Z-Score 5.83 | Avg F-Score 6.8/9 | Weighted Upside 17.3%
+
+### 🚧 Growth Holdings (25% Portfolio) - PENDING v0.3.0 "Gallium"
+- **PLTR** (4%) - Palantir Technologies
+- **AI** (4%) - C3.ai Inc.  
+- **PATH** (4%) - UiPath Inc.
+- **SNOW** (5%) - Snowflake Inc.
+- **CRWD** (4%) - CrowdStrike Holdings
+- **DDOG** (4%) - Datadog Inc.
+
+## �🏗️ Cognitive Architecture Overview
 
 This environment implements a three-layer cognitive memory system:
 
@@ -185,4 +219,24 @@ The cognitive architecture learns and adapts:
 
 ---
 
-**Remember**: This system is designed to uphold the highest standards of fiduciary responsibility while providing sophisticated analytical capabilities. Always prioritize client interests and maintain rigorous risk management practices.
+## 📄 License and Copyright
+
+**© 2025 fabioc-aloha. All Rights Reserved.**
+
+This Investment Management Framework contains proprietary methodologies, analytical algorithms, and intellectual property. See [LICENSE](./LICENSE) for complete terms and restrictions.
+
+### Protected Intellectual Property
+- Enhanced Security Analysis Methodology with Risk Assessment Matrix
+- AI-First Portfolio Construction algorithms and allocation strategies
+- Altman Z-Score and Piotroski F-Score integration frameworks  
+- Cognitive Architecture design for investment decision-making
+- Institutional-grade research templates and valuation models
+
+### Professional Use Notice
+This framework is designed for professional investment management and should only be used by licensed investment advisors, qualified financial professionals, and institutional investors with appropriate expertise.
+
+**Investment Risk Disclaimer**: All analysis involves substantial risk of loss. Past performance does not guarantee future results.
+
+---
+
+*Investment Management Framework v0.2.0 "Neon" - Illuminating investment decisions through enhanced AI-focused analysis*
