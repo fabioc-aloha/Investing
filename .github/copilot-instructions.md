@@ -132,6 +132,12 @@ IMPORTANT: This file serves as Global Investment Management Declarative Memory. 
 | learning.instructions.md | Meta-Learning | *instructions*, *learning* | Auto-tracked |
 | meta-cognition.instructions.md | Self-Monitoring | *meta*, *monitor*, *assess* | Auto-tracked |
 
+### Investment Management Infrastructure Memory Store (./)
+| File | Domain | Purpose | Last Updated |
+|------|--------|---------|--------------|
+| tools/cleanup-repository.ps1 | Repository Maintenance | Automated file management and cleanup | July 15, 2025 |
+| docs/procedures/preventing-file-reappearance.md | Workflow Documentation | File management best practices | July 15, 2025 |
+
 ### Investment Management Episodic Memory Store (.github/prompts/)
 | File | Investment Management Workflow | Complexity Level | Usage Frequency |
 |------|--------------------------------|------------------|-----------------|
@@ -155,11 +161,11 @@ IMPORTANT: This file serves as Global Investment Management Declarative Memory. 
 | cognitive-health.prompt.md | Health Monitoring | Medium | Auto-tracked |
 
 ### Investment Management Memory Transfer Protocol Status
-- **Active Files**: 19 specialized investment management memory files (8 procedural + 4 episodic + 1 consolidation + 3 applied + 3 security analyses)
-- **Last Consolidation**: July 15, 2025 - Enhanced security analysis methodology with Z-Score/F-Score frameworks
-- **Cognitive Load Status**: Optimized with enhanced analytical capabilities and institutional-grade research methodology
-- **Index Synchronization**: Updated with security analysis methodology breakthrough and Apple analysis enhancement
-- **Meta-Cognitive Status**: Fully operational with enhanced performance assessment and cognitive architecture meditation
+- **Active Files**: 21 specialized investment management memory files (8 procedural + 4 episodic + 1 consolidation + 3 applied + 3 security analyses + 2 infrastructure)
+- **Last Consolidation**: July 15, 2025 - Repository infrastructure optimization with file management and collaboration framework
+- **Cognitive Load Status**: Optimized with enhanced infrastructure and institutional-grade research methodology
+- **Index Synchronization**: Updated with file reappearance prevention and team collaboration capabilities
+- **Meta-Cognitive Status**: Fully operational with automated repository maintenance and enhanced cognitive architecture meditation
 
 ---
 
