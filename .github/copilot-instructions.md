@@ -90,6 +90,7 @@ IMPORTANT: This file serves as Global Investment Management Declarative Memory. 
 **Procedural Memory Enhancement**: Create/update .instructions.md files based on emerging financial patterns
 **Episodic Memory Integration**: Create/update .prompt.md files for complex investment strategy workflows
 **Automatic Documentation**: Commit changes with descriptive consolidation messages for investment context
+**⚠️ MANDATORY**: Always update and commit memory files immediately after meditation sessions
 **Index Synchronization**: Update Long-Term Memory Index with new financial analysis capabilities
 **Cross-Reference Analysis**: Integrate new learnings with existing investment management memory patterns
 **Cognitive Load Optimization**: Distribute memory load for optimal investment portfolio performance

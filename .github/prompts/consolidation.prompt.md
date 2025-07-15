@@ -126,6 +126,7 @@
 1. **Document Methodology Evolution**: Current security analysis enhancement represents significant procedural memory advancement
 2. **Update Performance Baseline**: Apple analysis now serves as gold standard for security analysis methodology
 3. **Prepare Scaling Strategy**: Framework ready for application to Microsoft and Sonos analyses
+4. **⚠️ CRITICAL**: Always update memory files after meditation sessions to consolidate learnings permanently
 
 ### Future Memory Development Priorities
 1. **Complete Procedural Memory**: Develop remaining 10 instruction files as investment domains are encountered
