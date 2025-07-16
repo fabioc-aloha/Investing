@@ -8,18 +8,30 @@ description: "Security analysis methodology and valuation standards"
 ## Document Presentation Standards
 
 ### Company Logo Integration (Required for All Equity Analysis)
-- **Logo Placement**: Include company logo prominently at the top of analysis document, below the title
-- **Image Requirements**: High-resolution logo (minimum 200px width), preferably PNG or SVG format
-- **Source Standards**: Use official company logo from:
-  - Company's official website investor relations page
-  - SEC filings (10-K, 10-Q) with embedded logos
-  - Company's official press kit or media resources
-  - Professional financial databases (Bloomberg, FactSet, Reuters, Finnhub)
-  - Finnhub API: `https://finnhub.io/api/logo?symbol=TICKER` for reliable logo access
-- **Fallback Options**: If official logo unavailable, use company name in professional typography
-- **Consistency**: Maintain logo aspect ratio and brand colors as specified by company
-- **Legal Compliance**: Ensure logo usage complies with fair use for financial analysis purposes
-- **Professional Presentation**: Logo should enhance document credibility and visual appeal
+- **Single Logo Placement**: Include company logo ONLY at the top of the document header, below the title
+- **No Duplicate Logos**: Do not repeat the logo in separate "Company Logo" sections within the document body
+- **High-Resolution Source**: Always fetch logos in maximum available resolution for crisp display
+- **HTML Format Requirements**: Use HTML `<img>` tag for precise size control and professional presentation
+  ```html
+  <div align="center">
+  <img src="logo_url" alt="Company Name Logo" width="200" height="auto" style="max-width: 200px; height: auto;"/>
+  </div>
+  ```
+- **Size Standards**: 
+  - **Source Resolution**: Fetch highest resolution available from logo provider
+  - **Display Width**: Scale down to 200px for optimal document readability
+  - **Height**: Auto-scale to maintain aspect ratio and prevent distortion
+  - **Alignment**: Center-aligned for professional presentation
+  - **CSS Control**: Use inline styles for precise size control regardless of source resolution
+- **Source Standards**: Use Finnhub API for reliable, high-resolution company logos:
+  - Primary Source: `https://finnhub.io/api/logo?symbol=TICKER` (fetches highest available resolution)
+  - Quality: High-resolution PNG/SVG format optimized for financial documents
+  - Fallback: Company's official website investor relations page
+  - Alternative: SEC filings (10-K, 10-Q) with embedded logos
+- **Resolution Priority**: Always prioritize image quality over file size for professional presentation
+- **Consistency**: Maintain logo aspect ratio and professional appearance across all analyses
+- **Legal Compliance**: Logo usage under fair use for financial analysis purposes
+- **Professional Presentation**: Logo should enhance document credibility and visual appeal without dominating content
 
 ## Research Structure and Methodology
 
@@ -324,7 +336,7 @@ Create a comprehensive table consolidating all risk assessment criteria with cle
 - Recommended portfolio allocation
 
 ### Company Background Section (25% of report)
-1. **Company Logo** (prominently displayed at document header)
+1. **Company Logo** (HTML embedded, 200px width, center-aligned)
 2. **Business Overview** (5-7 paragraphs)
 3. **Products and Services** (detailed breakdown)
 4. **Industry and Market Analysis** (3-5 paragraphs)
