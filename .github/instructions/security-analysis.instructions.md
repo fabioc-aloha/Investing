@@ -8,12 +8,14 @@ description: "Security analysis methodology and valuation standards"
 ## Document Presentation Standards
 
 ### Company Logo Integration (Required for All Equity Analysis)
-- **Single Logo Placement**: Include company logo ONLY at the top of the document header, below the title
+- **Centered Header Layout**: Center both the document title and logo for professional alignment
+- **Single Logo Placement**: Include company logo ONLY at the top of the document header, below the centered title
 - **No Duplicate Logos**: Do not repeat the logo in separate "Company Logo" sections within the document body
 - **High-Resolution Source**: Always fetch logos in maximum available resolution for crisp display
-- **HTML Format Requirements**: Use HTML `<img>` tag for precise size control and professional presentation
+- **HTML Format Requirements**: Use HTML for both title and logo to ensure proper centering
   ```html
   <div align="center">
+  <h1>Company Name (TICKER) - Investment Research</h1>
   <img src="logo_url" alt="Company Name Logo" width="200" height="auto" style="max-width: 200px; height: auto;"/>
   </div>
   ```
@@ -21,7 +23,7 @@ description: "Security analysis methodology and valuation standards"
   - **Source Resolution**: Fetch highest resolution available from logo provider
   - **Display Width**: Scale down to 200px for optimal document readability
   - **Height**: Auto-scale to maintain aspect ratio and prevent distortion
-  - **Alignment**: Center-aligned for professional presentation
+  - **Alignment**: Center-aligned title and logo for professional presentation
   - **CSS Control**: Use inline styles for precise size control regardless of source resolution
 - **Source Standards**: Use Finnhub API for reliable, high-resolution company logos:
   - Primary Source: `https://finnhub.io/api/logo?symbol=TICKER` (fetches highest available resolution)
@@ -286,31 +288,31 @@ Create a comprehensive table consolidating all risk assessment criteria with cle
 | **Risk Criteria** | **Score/Rating** | **Signal** | **Weight** | **Recommendation** | **Comments** |
 |-------------------|------------------|------------|------------|-------------------|--------------|
 | **Financial Distress Risk** |  |  |  |  |  |
-| Altman Z-Score | [Score] | Safe/Gray/Distress | High | BUY/HOLD/SELL | [Model used: Original/Z'/Z"/EM] |
+| Altman Z-Score | [Score] | Safe/Gray/Distress | High | BUY/HOLD/SELL | [Model: Original/Z'/Z"] |
 | **Fundamental Quality** |  |  |  |  |  |
 | Piotroski F-Score | [0-9] | Strong/Weak | High | BUY/HOLD/SELL | [Industry context] |
 | **Valuation Risk** |  |  |  |  |  |
-| DCF Fair Value | $[Price] | Under/Over/Fair | High | BUY/HOLD/SELL | [vs current price] |
-| P/E vs Historical | [Multiple] | Attractive/Expensive | Medium | BUY/HOLD/SELL | [vs 5-yr avg] |
-| EV/EBITDA vs Peers | [Multiple] | Discount/Premium | Medium | BUY/HOLD/SELL | [vs industry] |
+| DCF Fair Value | $[Price] | Under/Over/Fair | High | BUY/HOLD/SELL | vs current $[Price] |
+| P/E vs Historical | [Multiple] | Attractive/Expensive | Medium | BUY/HOLD/SELL | vs [X]-yr avg |
+| EV/EBITDA vs Peers | [Multiple] | Discount/Premium | Medium | BUY/HOLD/SELL | vs industry avg |
 | **Profitability Trends** |  |  |  |  |  |
-| Revenue Growth (3yr) | [%] | Accelerating/Stable/Declining | Medium | BUY/HOLD/SELL | [YoY trend] |
-| Margin Trends | [Direction] | Expanding/Stable/Contracting | Medium | BUY/HOLD/SELL | [Gross & Operating] |
+| Revenue Growth (3yr) | [%] | Accelerating/Stable/Declining | Medium | BUY/HOLD/SELL | [Brief trend note] |
+| Margin Trends | [Direction] | Expanding/Stable/Contracting | Medium | BUY/HOLD/SELL | [Key driver] |
 | **Balance Sheet Strength** |  |  |  |  |  |
-| Debt/Equity Ratio | [Ratio] | Conservative/Moderate/High | High | BUY/HOLD/SELL | [vs industry] |
-| Current Ratio | [Ratio] | Strong/Adequate/Weak | Medium | BUY/HOLD/SELL | [Liquidity position] |
+| Debt/Equity Ratio | [Ratio] | Conservative/Moderate/High | High | BUY/HOLD/SELL | [Brief assessment] |
+| Current Ratio | [Ratio] | Strong/Adequate/Weak | Medium | BUY/HOLD/SELL | [Liquidity note] |
 | **Cash Flow Quality** |  |  |  |  |  |
-| FCF Growth (3yr) | [%] | Positive/Flat/Negative | High | BUY/HOLD/SELL | [Sustainability] |
-| OCF vs Net Income | [Ratio] | Quality/Mixed/Poor | Medium | BUY/HOLD/SELL | [Earnings quality] |
+| FCF Growth (3yr) | [%] | Positive/Flat/Negative | High | BUY/HOLD/SELL | [Sustainability note] |
+| OCF vs Net Income | [Ratio] | Quality/Mixed/Poor | Medium | BUY/HOLD/SELL | [Quality assessment] |
 | **Market & Competitive Risk** |  |  |  |  |  |
-| Market Share Trend | [Direction] | Gaining/Stable/Losing | Medium | BUY/HOLD/SELL | [vs competitors] |
+| Market Share Trend | [Direction] | Gaining/Stable/Losing | Medium | BUY/HOLD/SELL | [Competitive note] |
 | Competitive Position | [Assessment] | Strong/Moderate/Weak | High | BUY/HOLD/SELL | [Moat strength] |
 | **Management & Governance** |  |  |  |  |  |
 | Capital Allocation | [Assessment] | Excellent/Good/Poor | Medium | BUY/HOLD/SELL | [Track record] |
 | ESG Rating | [Score] | Leader/Average/Laggard | Low | BUY/HOLD/SELL | [Material factors] |
 | **Macroeconomic Sensitivity** |  |  |  |  |  |
 | Economic Cycle Risk | [Level] | Low/Medium/High | Medium | BUY/HOLD/SELL | [Cyclical exposure] |
-| Interest Rate Risk | [Level] | Low/Medium/High | Medium | BUY/HOLD/SELL | [Debt sensitivity] |
+| Interest Rate Risk | [Level] | Low/Medium/High | Medium | BUY/HOLD/SELL | [Rate sensitivity] |
 
 ### **Overall Assessment Summary**
 | **Metric** | **Value** |
@@ -326,6 +328,9 @@ Create a comprehensive table consolidating all risk assessment criteria with cle
 #### Implementation Guidelines for Risk Matrix:
 - **Scoring Consistency**: Use standardized scales across all criteria
 - **Weight Allocation**: High weight = 3 points, Medium = 2 points, Low = 1 point
+- **Comment Length Limits**: Keep comments under 20 characters to prevent table rendering issues
+- **Concise Language**: Use brief, clear phrases without hyphens or long compound words
+- **Table Formatting**: Ensure proper Markdown table structure with consistent column alignment
 - **Signal Aggregation**: Calculate weighted average of BUY(+1)/HOLD(0)/SELL(-1) signals
 - **Color Coding**: Use green/yellow/red for visual clarity in actual reports
 - **Update Frequency**: Refresh matrix quarterly or upon material changes
