@@ -384,6 +384,33 @@ Create a comprehensive table consolidating all risk assessment criteria with cle
 3. **Position Sizing and Risk Management**
 4. **Monitoring Metrics and Review Schedule**
 
+## Table Formatting Standards (CRITICAL for Markdown Rendering)
+
+### Risk Assessment Matrix Formatting Requirements
+- **Comment Length Limit**: All comment fields MUST be under 20 characters to prevent Markdown table rendering breaks
+- **No Hyphens in Comments**: Avoid compound words like "revenue-growth" → use "revenue growth" or "growth" 
+- **Concise Language**: Use abbreviations and shortened phrases:
+  - "Strong fundamentals" → "Strong fund"
+  - "High debt burden" → "High debt"
+  - "Market leadership" → "Market lead"
+  - "Competitive advantage" → "Comp adv"
+- **Table Structure Consistency**: Always use standard 6-column format for risk matrices
+- **Implementation Example**:
+```markdown
+| **Risk Criteria** | **Score/Rating** | **Signal** | **Weight** | **Recommendation** | **Comments** |
+|-------------------|------------------|------------|------------|-------------------|--------------|
+| Altman Z-Score | 2.45 | Safe | High | BUY | Above 2.99 thresh |
+| Piotroski F-Score | 7/9 | Strong | High | BUY | Good quality |
+| DCF Fair Value | $15.20 | Undervalued | High | BUY | vs current $12.50 |
+```
+- **Testing Protocol**: Preview all tables before finalizing to ensure proper rendering
+- **Error Prevention**: Systematically check comment length during analysis creation
+
+### Professional Document Standards Integration
+- **Consistent Logo Sizing**: 200px width, auto-height scaling for all equity analyses
+- **Header Standardization**: HTML formatting for title and logo centering
+- **Quality Assurance**: Multi-point verification for presentation standards
+
 ## Risk Management Integration
 
 ### Risk-Adjusted Analysis
