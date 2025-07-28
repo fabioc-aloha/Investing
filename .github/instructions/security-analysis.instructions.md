@@ -5,6 +5,56 @@ description: "Security analysis methodology and valuation standards"
 
 # Security Analysis Procedural Memory
 
+## MANDATORY Data Validation Protocol (CRITICAL)
+
+### Pre-Analysis Data Collection Requirements
+**BEFORE beginning any security analysis, MUST complete:**
+
+1. **Real-Time Market Data Retrieval** (Use `fetch_webpage` tool):
+   - Yahoo Finance main quote: `https://finance.yahoo.com/quote/{SYMBOL}/`
+   - Yahoo Finance key statistics: `https://finance.yahoo.com/quote/{SYMBOL}/key-statistics/`
+   - Yahoo Finance financials: `https://finance.yahoo.com/quote/{SYMBOL}/financials/`
+
+2. **Core Metrics Verification** (MANDATORY validation):
+   - Current stock price and daily change
+   - Market capitalization (calculate: price × shares outstanding)
+   - P/E ratios (TTM and Forward) - verify calculation
+   - Revenue (TTM) and recent quarterly figures
+   - Earnings per share (TTM) - confirm with price for P/E validation
+   - Debt-to-equity ratio from latest balance sheet
+   - Current ratio and cash position
+   - Free cash flow and operating cash flow (TTM)
+   - Dividend yield (calculate: annual dividend ÷ current price)
+   - 52-week price range for context
+
+3. **Data Quality Standards**:
+   - Stock prices MUST be current trading day
+   - Financial data MUST be from most recent quarterly/annual filing
+   - All calculations MUST be verified (P/E, yield, ratios)
+   - Estimates MUST be marked with "(Est.)" and sourced
+   - Currency units MUST be consistent throughout
+
+4. **Critical Validation Checks**:
+   - Market cap = Current price × Shares outstanding
+   - P/E ratio = Current price ÷ EPS (TTM)
+   - Dividend yield = Annual dividend ÷ Current price
+   - Cross-reference revenue across multiple periods for consistency
+   - Verify debt figures match latest balance sheet
+
+### Zero Tolerance Errors
+- Outdated stock prices from previous sessions
+- Incorrect market cap calculations  
+- Wrong P/E ratios due to stale data
+- Inconsistent financial statement periods
+- Currency or unit notation errors
+
+### Data Source Documentation (Required)
+```markdown
+*Analysis based on latest financial data and market conditions as of [DATE]. 
+Current stock price: $XXX.XX as of [TIME] on [DATE].
+Financial data from [PERIOD] SEC filings and company reports.*
+```
+
 ## Document Presentation Standards
 
 ### Company Logo Integration (Required for All Equity Analysis)
@@ -273,67 +323,55 @@ The Piotroski F-Score complements the Altman Z-Score by evaluating fundamental b
 - **Error Checking**: Verify mathematical calculations and formula accuracy
 - **Peer Review**: Internal review process for significant recommendations
 
-## Report Structure Template
+## Report Structure and Requirements
 
-### Executive Summary (10% of report)
+### Executive Summary (MANDATORY FIRST SECTION)
+**Every equity research report MUST begin with a comprehensive Executive Summary containing:**
 
-#### Risk Assessment Matrix Table
-**Mandatory Risk Consolidation Table - Place at Top of Executive Summary**
+#### Required Elements (Non-Negotiable):
+- **Investment Recommendation**: Clear BUY/HOLD/SELL rating with HIGH/MEDIUM/LOW conviction level
+- **Price Target**: 12-month price target with expected total return percentage  
+- **Key Investment Thesis**: 3-4 concise bullet points of primary value drivers
+- **Primary Risk Factors**: 2-3 most significant risks to the investment thesis
+- **Financial Health Summary**: Current valuation metrics and balance sheet assessment
+- **Market Performance Context**: Recent stock performance and analyst sentiment
 
-Create a comprehensive table consolidating all risk assessment criteria with clear formatting:
-
+#### Executive Summary Template (Use This Format):
 ```markdown
-## Investment Risk Assessment Matrix
+## Executive Summary
 
-| **Risk Criteria** | **Score/Rating** | **Signal** | **Weight** | **Recommendation** | **Comments** |
-|-------------------|------------------|------------|------------|-------------------|--------------|
-| **Financial Distress Risk** |  |  |  |  |  |
-| Altman Z-Score | [Score] | Safe/Gray/Distress | High | BUY/HOLD/SELL | [Model: Original/Z'/Z"] |
-| **Fundamental Quality** |  |  |  |  |  |
-| Piotroski F-Score | [0-9] | Strong/Weak | High | BUY/HOLD/SELL | [Industry context] |
-| **Valuation Risk** |  |  |  |  |  |
-| DCF Fair Value | $[Price] | Under/Over/Fair | High | BUY/HOLD/SELL | vs current $[Price] |
-| P/E vs Historical | [Multiple] | Attractive/Expensive | Medium | BUY/HOLD/SELL | vs [X]-yr avg |
-| EV/EBITDA vs Peers | [Multiple] | Discount/Premium | Medium | BUY/HOLD/SELL | vs industry avg |
-| **Profitability Trends** |  |  |  |  |  |
-| Revenue Growth (3yr) | [%] | Accelerating/Stable/Declining | Medium | BUY/HOLD/SELL | [Brief trend note] |
-| Margin Trends | [Direction] | Expanding/Stable/Contracting | Medium | BUY/HOLD/SELL | [Key driver] |
-| **Balance Sheet Strength** |  |  |  |  |  |
-| Debt/Equity Ratio | [Ratio] | Conservative/Moderate/High | High | BUY/HOLD/SELL | [Brief assessment] |
-| Current Ratio | [Ratio] | Strong/Adequate/Weak | Medium | BUY/HOLD/SELL | [Liquidity note] |
-| **Cash Flow Quality** |  |  |  |  |  |
-| FCF Growth (3yr) | [%] | Positive/Flat/Negative | High | BUY/HOLD/SELL | [Sustainability note] |
-| OCF vs Net Income | [Ratio] | Quality/Mixed/Poor | Medium | BUY/HOLD/SELL | [Quality assessment] |
-| **Market & Competitive Risk** |  |  |  |  |  |
-| Market Share Trend | [Direction] | Gaining/Stable/Losing | Medium | BUY/HOLD/SELL | [Competitive note] |
-| Competitive Position | [Assessment] | Strong/Moderate/Weak | High | BUY/HOLD/SELL | [Moat strength] |
-| **Management & Governance** |  |  |  |  |  |
-| Capital Allocation | [Assessment] | Excellent/Good/Poor | Medium | BUY/HOLD/SELL | [Track record] |
-| ESG Rating | [Score] | Leader/Average/Laggard | Low | BUY/HOLD/SELL | [Material factors] |
-| **Macroeconomic Sensitivity** |  |  |  |  |  |
-| Economic Cycle Risk | [Level] | Low/Medium/High | Medium | BUY/HOLD/SELL | [Cyclical exposure] |
-| Interest Rate Risk | [Level] | Low/Medium/High | Medium | BUY/HOLD/SELL | [Rate sensitivity] |
+**Investment Recommendation:** [BUY/HOLD/SELL] | **Conviction:** [HIGH/MEDIUM/LOW]
+**Price Target:** $XXX | **Expected Return:** XX% | **Time Horizon:** 12 months
 
-### **Overall Assessment Summary**
-| **Metric** | **Value** |
-|------------|-----------|
-| **Total BUY Signals** | [Count] |
-| **Total HOLD Signals** | [Count] |
-| **Total SELL Signals** | [Count] |
-| **Weighted Recommendation** | **BUY/HOLD/SELL** |
-| **Confidence Level** | **High/Medium/Low** |
-| **Position Size Guidance** | **[%] of portfolio** |
+### Key Investment Thesis
+• [Primary value driver - specific growth catalyst, market opportunity, competitive advantage]
+• [Secondary thesis point - operational improvement, financial leverage, strategic initiative]  
+• [Supporting factor - management execution, industry tailwinds, valuation opportunity]
+• [Risk mitigation - defensive characteristics, diversification, financial strength]
+
+### Primary Risk Factors
+• [Highest probability/impact risk with specific details]
+• [Secondary risk with quantifiable impact potential]
+• [Macroeconomic or industry-specific risk]
+
+### Financial Health Assessment
+- **Current Price:** $XXX.XX (±X.X% today) | **52-Week Range:** $XXX - $XXX
+- **Valuation:** P/E XX.Xx | EV/EBITDA XX.Xx | Price/Book X.Xx
+- **Growth:** Revenue +XX% (TTM) | Earnings +XX% (TTM)
+- **Profitability:** XX% operating margin | XX% net margin
+- **Balance Sheet:** [Strong/Adequate/Weak] - [specific debt/cash metrics]
+- **Dividend:** X.X% yield | XX% payout ratio (if applicable)
+
+### Investment Summary
+[2-3 sentences summarizing why this is a BUY/HOLD/SELL with the key catalyst, timeline, and risk/reward assessment. Must be specific and actionable.]
 ```
 
-#### Implementation Guidelines for Risk Matrix:
-- **Scoring Consistency**: Use standardized scales across all criteria
-- **Weight Allocation**: High weight = 3 points, Medium = 2 points, Low = 1 point
-- **Comment Length Limits**: Keep comments under 20 characters to prevent table rendering issues
-- **Concise Language**: Use brief, clear phrases without hyphens or long compound words
-- **Table Formatting**: Ensure proper Markdown table structure with consistent column alignment
-- **Signal Aggregation**: Calculate weighted average of BUY(+1)/HOLD(0)/SELL(-1) signals
-- **Color Coding**: Use green/yellow/red for visual clarity in actual reports
-- **Update Frequency**: Refresh matrix quarterly or upon material changes
+#### Quality Standards:
+- **Specificity Required**: Avoid generic statements; include specific metrics, dates, and quantifiable targets
+- **Actionable Guidance**: Clear recommendation with reasoning an investor can act upon
+- **Risk Transparency**: Honest assessment of downside scenarios and probability
+- **Current Data**: All figures must reflect most recent market data and financial statements
+- **Professional Tone**: Institutional-grade analysis suitable for professional investment decisions
 
 - Investment recommendation (BUY/HOLD/SELL) with price target
 - Key investment thesis in 3-4 bullet points
