@@ -2,7 +2,7 @@
 
 [![Version](https://img.shields.io/badge/version-0.2.0-blue.svg)](./VERSION.md) [![Element](https://img.shields.io/badge/element-Calcium%20(Ca%2020)-orange.svg)](./VERSION.md) [![Status](https://img.shields.io/badge/status-Production%20Ready-green.svg)](./VERSION.md) [![Analysis](https://img.shields.io/badge/core%20holdings-6%2F6%20complete-success.svg)](./VERSION.md) [![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red.svg)](./LICENSE)
 
-![Investment Management Banner](./banner.png)
+![Investment Management Banner](./ALEX-INVESTMENT.png)
 
 ## 🧪 Current Release: v0.2.0 "Calcium" (Ca-20)
 
@@ -12,7 +12,7 @@ Welcome to your comprehensive investment management framework powered by enhance
 
 ## 🎯 Release Highlights v0.2.0 "Calcium"
 - **Enhanced Security Analysis Methodology** with Risk Assessment Matrix
-- **AI-First Technology Portfolio** framework and core holdings analysis  
+- **AI-First Technology Portfolio** framework and core holdings analysis
 - **Institutional-Grade Research** with Z-Score/F-Score integration
 - **Cognitive Architecture Optimization** for investment decision-making
 
@@ -32,7 +32,7 @@ Welcome to your comprehensive investment management framework powered by enhance
 
 ### 🚧 Growth Holdings (25% Portfolio) - PENDING v0.3.0 "Gallium"
 - **PLTR** (4%) - Palantir Technologies
-- **AI** (4%) - C3.ai Inc.  
+- **AI** (4%) - C3.ai Inc.
 - **PATH** (4%) - UiPath Inc.
 - **SNOW** (5%) - Snowflake Inc.
 - **CRWD** (4%) - CrowdStrike Holdings
@@ -228,7 +228,7 @@ This Investment Management Framework contains proprietary methodologies, analyti
 ### Protected Intellectual Property
 - Enhanced Security Analysis Methodology with Risk Assessment Matrix
 - AI-First Portfolio Construction algorithms and allocation strategies
-- Altman Z-Score and Piotroski F-Score integration frameworks  
+- Altman Z-Score and Piotroski F-Score integration frameworks
 - Cognitive Architecture design for investment decision-making
 - Institutional-grade research templates and valuation models
 
