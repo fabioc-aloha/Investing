@@ -5,48 +5,40 @@ description: "Security analysis methodology and valuation standards"
 
 # Security Analysis Procedural Memory
 
-## MANDATORY Data Validation Protocol (CRITICAL)
+## MANDATORY Template-Driven Analysis Protocol (CRITICAL)
 
-### Pre-Analysis Data Collection Requirements
-**BEFORE beginning any security analysis, MUST complete:**
+### Pre-Analysis Requirements
+**BEFORE beginning any security analysis, MUST utilize established templates:**
 
-1. **Real-Time Market Data Retrieval** (Use `fetch_webpage` tool):
+1. **Template System Activation**:
+   - Reference `/templates/equity-research-executive-summary-template.md` for document structure
+   - Follow `/docs/procedures/financial-analysis-workflow.md` for systematic process
+   - Apply `/tools/automated-data-collection.md` for data gathering protocols
+
+2. **Real-Time Market Data Retrieval** (Use `fetch_webpage` tool):
    - Yahoo Finance main quote: `https://finance.yahoo.com/quote/{SYMBOL}/`
    - Yahoo Finance key statistics: `https://finance.yahoo.com/quote/{SYMBOL}/key-statistics/`
    - Yahoo Finance financials: `https://finance.yahoo.com/quote/{SYMBOL}/financials/`
+   - Finnhub logo integration: `https://finnhub.io/api/v1/stock/profile2?symbol={SYMBOL}`
 
-2. **Core Metrics Verification** (MANDATORY validation):
-   - Current stock price and daily change
-   - Market capitalization (calculate: price × shares outstanding)
-   - P/E ratios (TTM and Forward) - verify calculation
-   - Revenue (TTM) and recent quarterly figures
-   - Earnings per share (TTM) - confirm with price for P/E validation
-   - Debt-to-equity ratio from latest balance sheet
-   - Current ratio and cash position
-   - Free cash flow and operating cash flow (TTM)
-   - Dividend yield (calculate: annual dividend ÷ current price)
-   - 52-week price range for context
+3. **Systematic Document Creation**:
+   - Executive Summary: Must include clear investment recommendation within first 3 paragraphs
+   - Risk Assessment Matrix: Utilize standardized 5-point risk scoring framework
+   - Financial Scoring: Apply Altman Z-Score and Piotroski F-Score methodologies
+   - Valuation Framework: DCF analysis with sensitivity tables for key assumptions
 
-3. **Data Quality Standards**:
-   - Stock prices MUST be current trading day
-   - Financial data MUST be from most recent quarterly/annual filing
-   - All calculations MUST be verified (P/E, yield, ratios)
-   - Estimates MUST be marked with "(Est.)" and sourced
-   - Currency units MUST be consistent throughout
+4. **Template-Based Quality Assurance**:
+   - Data validation through automated cross-referencing
+   - Professional presentation standards from template framework
+   - Institutional-grade analysis methodology consistently applied
+   - Executive summary leadership for immediate investment guidance
 
-4. **Critical Validation Checks**:
-   - Market cap = Current price × Shares outstanding
-   - P/E ratio = Current price ÷ EPS (TTM)
-   - Dividend yield = Annual dividend ÷ Current price
-   - Cross-reference revenue across multiple periods for consistency
-   - Verify debt figures match latest balance sheet
-
-### Zero Tolerance Errors
-- Outdated stock prices from previous sessions
-- Incorrect market cap calculations  
-- Wrong P/E ratios due to stale data
-- Inconsistent financial statement periods
-- Currency or unit notation errors
+### Zero Tolerance Template Deviations
+- Bypassing established document templates
+- Manual formatting instead of template utilization  
+- Inconsistent analysis frameworks across reports
+- Missing executive summary investment recommendations
+- Failure to apply systematic scoring methodologies
 
 ### Data Source Documentation (Required)
 ```markdown

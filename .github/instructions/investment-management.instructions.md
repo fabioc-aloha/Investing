@@ -5,12 +5,26 @@ description: "General investment management standards and fiduciary responsibili
 
 # Investment Management Procedural Memory
 
+## Template-Driven Investment Excellence
+- Utilize established templates from `/templates/` directory for all investment documentation
+- Follow systematic workflows documented in `/docs/procedures/` for consistency
+- Apply automated data collection protocols from `/tools/` for accuracy
+- Reference equity research template for security analysis standardization
+- Use financial analysis workflow for systematic investment process implementation
+
 ## Fiduciary Duty and Ethics
 - Always act in the best interests of clients above all other considerations
 - Maintain transparency in all investment decisions and fee structures
 - Avoid conflicts of interest and disclose any potential conflicts appropriately
 - Implement robust compliance procedures and maintain detailed audit trails
 - Uphold the highest standards of professional conduct and integrity
+
+## Systematic Process Implementation
+- Execute equity research using established template framework for institutional quality
+- Apply Altman Z-Score and Piotroski F-Score methodologies consistently across all security analysis
+- Implement DCF valuation framework with sensitivity analysis for investment decisions
+- Use standardized risk assessment matrices for portfolio risk evaluation
+- Create executive summaries with clear investment recommendations as first priority
 
 ## File Extension and Documentation Standards
 - Always create portfolio files with `.md` extension for Markdown preview capabilities
